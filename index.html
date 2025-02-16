@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCQ Quiz</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; }
+        .quiz-container { max-width: 600px; margin: auto; padding: 20px; border: 1px solid #ccc; border-radius: 10px; }
+        .question { font-size: 18px; margin-bottom: 10px; }
+        .options label { display: block; text-align: left; margin: 5px 0; }
+        #submit-btn { margin-top: 10px; padding: 10px 15px; background: blue; color: white; border: none; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <div class="quiz-container">
+        <h2>MCQ Test</h2>
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+        <br>
+        <label for="enrollment">Enrollment Number:</label>
+        <input type="text" id="enrollment" required>
+        <br><br>
+        <div id="quiz"></div>
+        <button id="submit-btn" onclick="submitQuiz()">Submit</button>
+        <p id="result"></p>
+    </div>
+    
+    <script>
+        let questions = [];
+        let currentQuestion = 0;
+        let score = 0;
+        let categoryScores = {};
+
+        fetch('questions.json')
+            .then(response => response.json())
+            .then(data => {
+                questions = data;
+                displayQuestion();
+            });
+
+        function displayQuestion() {
+            let quizContainer = document.getElementById('quiz');
+            quizContainer.innerHTML = '';
+
+            let q = questions[currentQuestion];
+            let questionElem = document.createElement('div');
+            questionElem.className = 'question';
+            questionElem.innerText = q.question;
+            quizContainer.appendChild(questionElem);
+
+            let optionsDiv = document.createElement('div');
+            optionsDiv.className = 'options';
+            
+            q.options.forEach((option, index) => {
+                let label = document.createElement('label');
+                let input = document.createElement('input');
+                input.type = 'radio';
+                input.name = 'answer';
+                input.value = String.fromCharCode(65 + index);
+                label.appendChild(input);
+                label.appendChild(document.createTextNode(' ' + option));
+                optionsDiv.appendChild(label);
+            });
+
+            quizContainer.appendChild(optionsDiv);
+        }
+
+        function submitQuiz() {
+            let selectedOption = document.querySelector('input[name="answer"]:checked');
+            if (!selectedOption) {
+                alert('Please select an answer!');
+                return;
+            }
+
+            let q = questions[currentQuestion];
+            if (selectedOption.value === q.correct) {
+                score++;
+                categoryScores[q.category] = (categoryScores[q.category] || 0) + 1;
+            }
+
+            currentQuestion++;
+            if (currentQuestion < questions.length) {
+                displayQuestion();
+            } else {
+                let name = document.getElementById('name').value;
+                let enrollment = document.getElementById('enrollment').value;
+                if (!name || !enrollment) {
+                    alert("Please enter your Name and Enrollment Number");
+                    return;
+                }
+                
+                document.getElementById('quiz').innerHTML = '';
+                document.getElementById('result').innerHTML = `<h3>Your Total Score: ${score} / ${questions.length}</h3>`;
+                
+                for (let category in categoryScores) {
+                    let categoryResult = document.createElement('p');
+                    categoryResult.innerText = `${category}: ${categoryScores[category]}`;
+                    document.getElementById('result').appendChild(categoryResult);
+                }
+                
+                document.getElementById('submit-btn').style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>

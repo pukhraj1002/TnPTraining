@@ -1,0 +1,245 @@
+
+    [
+        {
+            "question": "Which of the following is an example of effective communication?",
+            "options": ["Speaking loudly", "Active listening", "Interrupting frequently", "Using technical jargon"],
+            "correct": "B",
+            "category": "Communication Skills"
+        },
+        {
+            "question": "What is a key barrier to effective communication?",
+            "options": ["Clarity in speech", "Distractions and noise", "Good body language", "Active listening"],
+            "correct": "B",
+            "category": "Communication Skills"
+        },
+        {
+            "question": "Which of the following is an essential element of active listening?",
+            "options": ["Interrupting", "Maintaining eye contact", "Looking at your phone", "Talking over the speaker"],
+            "correct": "B",
+            "category": "Communication Skills"
+        },
+        {
+            "question": "What is the purpose of paraphrasing in communication?",
+            "options": ["To change the topic", "To ensure understanding", "To confuse the listener", "To prove a point"],
+            "correct": "B",
+            "category": "Communication Skills"
+        },
+        {
+            "question": "Which of these is NOT a form of nonverbal communication?",
+            "options": ["Facial expressions", "Gestures", "Tone of voice", "Written text"],
+            "correct": "D",
+            "category": "Communication Skills"
+        },
+        {
+            "question": "What is the best way to handle a misunderstanding in communication?",
+            "options": ["Ignore it", "Clarify immediately", "Assume meaning", "React emotionally"],
+            "correct": "B",
+            "category": "Communication Skills"
+        },
+        {
+            "question": "Which factor is crucial for effective workplace communication?",
+            "options": ["Using complex words", "Clarity and conciseness", "Speaking rapidly", "Avoiding all feedback"],
+            "correct": "B",
+            "category": "Communication Skills"
+        },
+        {
+            "question": "Why is feedback important in communication?",
+            "options": ["To reinforce misunderstandings", "To ensure the message is understood", "To ignore the speaker", "To end the conversation quickly"],
+            "correct": "B",
+            "category": "Communication Skills"
+        },
+        {
+            "question": "Which of the following is a good practice for email communication?",
+            "options": ["Using vague subject lines", "Being clear and concise", "Writing in all caps", "Ignoring grammar"],
+            "correct": "B",
+            "category": "Communication Skills"
+        },
+        {
+            "question": "What is an important aspect of cross-cultural communication?",
+            "options": ["Assuming everyone understands your language", "Being aware of cultural differences", "Ignoring nonverbal cues", "Using technical jargon"],
+            "correct": "B",
+            "category": "Communication Skills"
+        },
+        {
+            "question": "What is the primary function of an operating system?",
+            "options": ["Manage hardware resources", "Run application software", "Provide internet access", "Store user data"],
+            "correct": "A",
+            "category": "Basic CS Fundamentals"
+        },
+        {
+            "question": "Which data structure uses the Last In, First Out (LIFO) principle?",
+            "options": ["Queue", "Stack", "Linked List", "Tree"],
+            "correct": "B",
+            "category": "Basic CS Fundamentals"
+        },
+        {
+            "question": "What is the main purpose of a database index?",
+            "options": ["To enforce integrity constraints", "To speed up data retrieval", "To ensure data consistency", "To store backup copies"],
+            "correct": "B",
+            "category": "Basic CS Fundamentals"
+        },
+        {
+            "question": "Which of the following is a characteristic of an algorithm?",
+            "options": ["Infinite execution", "Ambiguity", "Definiteness", "Random execution"],
+            "correct": "C",
+            "category": "Basic CS Fundamentals"
+        },
+        {
+            "question": "What does the term 'Big O Notation' refer to in computer science?",
+            "options": ["Memory allocation", "Time complexity analysis", "Binary operations", "Data encryption"],
+            "correct": "B",
+            "category": "Basic CS Fundamentals"
+        },
+        {
+            "question": "Which type of network topology has a central hub?",
+            "options": ["Bus", "Ring", "Star", "Mesh"],
+            "correct": "C",
+            "category": "Basic CS Fundamentals"
+        },
+        {
+            "question": "What does SQL stand for?",
+            "options": ["Structured Question Language", "System Query Logic", "Structured Query Language", "Sequential Query List"],
+            "correct": "C",
+            "category": "Basic CS Fundamentals"
+        },
+        {
+            "question": "Which of the following is NOT a characteristic of Object-Oriented Programming?",
+            "options": ["Encapsulation", "Inheritance", "Polymorphism", "Linear Execution"],
+            "correct": "D",
+            "category": "Basic CS Fundamentals"
+        },
+        {
+            "question": "What is the purpose of a firewall in networking?",
+            "options": ["Speed up internet access", "Block unauthorized access", "Enhance network bandwidth", "Compress data packets"],
+            "correct": "B",
+            "category": "Basic CS Fundamentals"
+        },
+        {
+            "question": "Which sorting algorithm has the best average-case time complexity?",
+            "options": ["Bubble Sort", "Insertion Sort", "Merge Sort", "Selection Sort"],
+            "correct": "C",
+            "category": "Basic CS Fundamentals"
+        },
+        {
+            "question": "Which of the following is NOT an operating system?",
+            "options": ["Windows", "Linux", "Python", "macOS"],
+            "correct": "C",
+            "category": "IT Readiness"
+        },
+        {
+            "question": "Which company provides the AWS cloud computing platform?",
+            "options": ["Google", "Microsoft", "Amazon", "IBM"],
+            "correct": "C",
+            "category": "IT Readiness"
+        },
+        {
+            "question": "What is the primary purpose of a firewall in a network?",
+            "options": ["To prevent unauthorized access", "To store data", "To speed up internet", "To manage files"],
+            "correct": "A",
+            "category": "IT Readiness"
+        },
+        {
+            "question": "Which protocol is used to send emails?",
+            "options": ["HTTP", "SMTP", "FTP", "IMAP"],
+            "correct": "B",
+            "category": "IT Readiness"
+        },
+        {
+            "question": "What does VPN stand for?",
+            "options": ["Virtual Private Network", "Verified Public Network", "Virtual Processing Node", "Variable Proxy Network"],
+            "correct": "A",
+            "category": "IT Readiness"
+        },
+        {
+            "question": "Which of the following storage types is volatile?",
+            "options": ["SSD", "RAM", "HDD", "Flash Drive"],
+            "correct": "B",
+            "category": "IT Readiness"
+        },
+        {
+            "question": "Which of the following is an example of a SaaS application?",
+            "options": ["Google Docs", "Windows OS", "Intel Processor", "Wi-Fi Router"],
+            "correct": "A",
+            "category": "IT Readiness"
+        },
+        {
+            "question": "What does DNS stand for?",
+            "options": ["Digital Network System", "Domain Name System", "Data Node Server", "Distributed Network Security"],
+            "correct": "B",
+            "category": "IT Readiness"
+        },
+        {
+            "question": "Which type of network topology connects all nodes to a single central hub?",
+            "options": ["Ring", "Mesh", "Star", "Bus"],
+            "correct": "C",
+            "category": "IT Readiness"
+        },
+        {
+            "question": "Which of the following is an example of two-factor authentication?",
+            "options": ["Password only", "Username and password", "Fingerprint and OTP", "Security question"],
+            "correct": "C",
+            "category": "IT Readiness"
+        },
+        {
+            "question": "What is the output of 'print(2 ** 3)' in Python?",
+            "options": ["5", "6", "8", "9"],
+            "correct": "C",
+            "category": "Programming/Coding Skills"
+        },
+        {
+            "question": "Which of the following is a mutable data type in Python?",
+            "options": ["Tuple", "String", "List", "Integer"],
+            "correct": "C",
+            "category": "Programming/Coding Skills"
+        },
+        {
+            "question": "What is the time complexity of inserting an element in a binary search tree (BST) on average?",
+            "options": ["O(n)", "O(log n)", "O(n log n)", "O(1)"],
+            "correct": "B",
+            "category": "Programming/Coding Skills"
+        },
+        {
+            "question": "Which sorting algorithm has the best average case time complexity?",
+            "options": ["Bubble Sort", "Merge Sort", "Quick Sort", "Selection Sort"],
+            "correct": "B",
+            "category": "Programming/Coding Skills"
+        },
+        {
+            "question": "What does the 'self' keyword represent in a Python class method?",
+            "options": ["The class itself", "An instance of the class", "A local variable", "A global variable"],
+            "correct": "B",
+            "category": "Programming/Coding Skills"
+        },
+        {
+            "question": "Which keyword is used to define a function in Python?",
+            "options": ["func", "def", "define", "function"],
+            "correct": "B",
+            "category": "Programming/Coding Skills"
+        },
+        {
+            "question": "Which data structure follows Last In First Out (LIFO) principle?",
+            "options": ["Queue", "Stack", "Linked List", "Array"],
+            "correct": "B",
+            "category": "Programming/Coding Skills"
+        },
+        {
+            "question": "What does 'int main()' indicate in a C++ program?",
+            "options": ["Start of the program", "A user-defined function", "A loop", "An integer declaration"],
+            "correct": "A",
+            "category": "Programming/Coding Skills"
+        },
+        {
+            "question": "Which of the following languages is statically typed?",
+            "options": ["Python", "JavaScript", "Java", "Ruby"],
+            "correct": "C",
+            "category": "Programming/Coding Skills"
+        },
+        {
+            "question": "What is the purpose of a constructor in object-oriented programming?",
+            "options": ["To allocate memory", "To initialize an object", "To delete an object", "To call another function"],
+            "correct": "B",
+            "category": "Programming/Coding Skills"
+        }
+]
+
+
